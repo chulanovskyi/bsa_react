@@ -25,7 +25,7 @@ class ManageUsers extends Component {
     };
 
     handleDeleteUser = (user) => {
-        let toDeleteUser = ReactDOM.findDOMNode(user.userFromList.user);
+        let toDeleteUser = ReactDOM.findDOMNode(user);
         ReactDOM.unmountComponentAtNode(toDeleteUser);
 
         // let users = [...this.props.users];

@@ -12,9 +12,7 @@ class UserList extends Component {
     }
 
     handleDel = (user) => {
-        this.props.onUserDelete({
-            userFromList: user
-        })
+        this.props.onUserDelete(user)
     };
 
     render() {

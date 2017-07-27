@@ -9,9 +9,7 @@ class User extends Component {
         }
     }
     handleDel = () => {
-        this.props.onDel({
-            user: this
-        })
+        this.props.onDel(this)
     };
 
     render() {
