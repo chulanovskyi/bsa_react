@@ -1,0 +1,13 @@
+.content__user-list {
+  display: flex;
+  flex-flow: column;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #228B22;
+}
+
+.user-list__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
