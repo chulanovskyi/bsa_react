@@ -16,9 +16,17 @@ class AddUser extends Component {
         });
     };
     handleAdd = () => {
+        let name = this.refs.username.value;
+        if (!name) {
+            return alert('Username is required')
+        }
         this.props.onAdd({
-            username: this.state.username,
+            username: name,
             userId: this.props.countId
+        });
+        this.refs.username.value = '';
+        this.setState({
+            username: ''
         });
     };
     render() {
