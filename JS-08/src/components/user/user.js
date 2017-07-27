@@ -8,8 +8,7 @@ class User extends Component {
             user: props.user
         }
     }
-    handleDel = (e) => {
-        console.log(e.target.value);
+    handleDel = () => {
         this.props.onDel({
             user: this
         })

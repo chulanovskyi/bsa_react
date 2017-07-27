@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom'
 import AppContent from '../containers/appContent/appContent'
 import AddUser from './addUser/addUser'
 import UserList from './userList/userList'
@@ -25,10 +25,17 @@ class ManageUsers extends Component {
     };
 
     handleDeleteUser = (user) => {
+        let toDeleteUser = ReactDOM.findDOMNode(user.userFromList.user);
+        ReactDOM.unmountComponentAtNode(toDeleteUser);
+
+        // let users = [...this.props.users];
         // this.setState({
-        //     users: user
+        //     users: users.filter(user => user.userId.toString() !== e.target.value)
+        // // });
+        // this.props.onDel({
+        //     users: this.state.users
         // })
-        // console.log(ReactDOM.findDOMNode(user.user.user));
+
     };
 
     render() {

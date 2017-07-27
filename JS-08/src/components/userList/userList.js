@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom'
+// import ReactDOM from 'react-dom'
 import User from '../user/user'
 import './userList.css'
 
@@ -11,20 +11,10 @@ class UserList extends Component {
         }
     }
 
-    handleDel = (e) => {
-        console.log(`In UserList: ${e}`);
-        let toDeleteUser = ReactDOM.findDOMNode(e.user);
-        ReactDOM.unmountComponentAtNode(toDeleteUser);
+    handleDel = (user) => {
         this.props.onUserDelete({
-            user: e
+            userFromList: user
         })
-        // let users = [...this.props.users];
-        // this.setState({
-        //     users: users.filter(user => user.userId.toString() !== e.target.value)
-        // // });
-        // this.props.onDel({
-        //     users: this.state.users
-        // })
     };
 
     render() {
