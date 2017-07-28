@@ -1,0 +1,8 @@
+.user-list__user {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 5px auto;
+  border: 1px solid #FF0000;
+  color: black;
+}
