@@ -19,8 +19,10 @@ class ManageUsers extends Component {
         }
         let users = [...this.state.users];
         users.push(user);
-        this.setState({users: users});
-        this.setState({countId: ++this.state.countId});
+        this.setState({
+            users: users,
+            countId: ++this.state.countId
+        });
     };
 
     handleDeleteUser = (user) => {

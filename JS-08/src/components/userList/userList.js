@@ -12,7 +12,7 @@ class UserList extends Component {
             <div className="content__user-list">
                 <ul className="user-list__list">
                     {this.props.users.map((user) => {
-                        return <User key={user.username} onDel={this.handleDel} user={user}/>
+                        return <User key={user.userId} onDel={this.handleDel} user={user}/>
                     })}
                 </ul>
             </div>
