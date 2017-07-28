@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AppContent from '../containers/appContent/appContent'
+import AppContent from '../../containers/appContent/appContent'
 import AddUser from './addUser/addUser'
 import UserList from './userList/userList'
 import './manageUsers.css'
