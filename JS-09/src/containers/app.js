@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types'
 import './app.css'
 
 class App extends Component {
@@ -12,10 +11,5 @@ class App extends Component {
         )
     }
 }
-
-App.propTypes = {
-    className: PropTypes.string,
-    children: PropTypes.element
-};
 
 export default App
