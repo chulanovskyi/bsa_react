@@ -1,6 +1,12 @@
 .content__filter {
-  text-align: left;
+  display: flex;
+  justify-content: space-between;
   border: 1px solid #6495ED;
   padding: 10px 5px;
   margin: 10px 0;
+  color: #000;
+}
+
+.fa-search {
+  padding-right: 15px;
 }

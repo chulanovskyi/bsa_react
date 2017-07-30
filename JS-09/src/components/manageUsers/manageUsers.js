@@ -9,25 +9,6 @@ import FilterUser from './filterUser/filterUser'
 import './manageUsers.css'
 
 class ManageUsers extends Component {
-    // handleAddUser = (user) => {
-    //     if (this.state.users.filter(u => u.username === user.username).length > 0){
-    //         return alert('User already exists');
-    //     }
-    //     let users = [...this.state.users];
-    //     users.push(user);
-    //     this.setState({
-    //         users: users,
-    //         ID: ++this.state.ID
-    //     });
-    // };
-
-    // handleDeleteUser = (user) => {
-    //     let users = [...this.state.users];
-    //     this.setState({
-    //         users: users.filter(u => u.username !== user.props.user.username)
-    //     });
-    // };
-    //
     render() {
         let {countId, users, filterPattern} = this.props.stateFromReducer;
         return (
@@ -50,6 +31,4 @@ function mapStateToProps(state) {
     };
 }
 
-const ManageUsersConnected = connect(mapStateToProps, mapDispatchToProps)(ManageUsers);
-
-export default ManageUsersConnected
+export default connect(mapStateToProps, mapDispatchToProps)(ManageUsers);

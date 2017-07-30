@@ -1,4 +1,4 @@
 ***JS-09***
 
-* npm install
-* npm start
+* `npm install`
+* `npm start`

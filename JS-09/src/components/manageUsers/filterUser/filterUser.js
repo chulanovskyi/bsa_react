@@ -11,8 +11,8 @@ class FilterUser extends Component {
     render() {
         return (
             <div className="content__filter">
-                <input ref="filter" className="filter__input" maxLength={20} placeholder="Search user"
-                onChange={this.onFilter}/>
+                <input ref="filter" maxLength={20} placeholder="Search user" onChange={this.onFilter}/>
+                <span className="fa fa-search"/>
             </div>
         )
     }
