@@ -34,10 +34,4 @@ function mapDispatchToProps(dispatch) {
     }
 }
 
-function mapStateToProps(state) {
-    return {
-        stateFromReducer: state
-    };
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(AddUser);
+export default connect(null, mapDispatchToProps)(AddUser);

@@ -24,10 +24,4 @@ function mapDispatchToProps(dispatch) {
     }
 }
 
-function mapStateToProps(state) {
-    return {
-        stateFromReducer: state
-    };
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(FilterUser)
+export default connect(null, mapDispatchToProps)(FilterUser)
